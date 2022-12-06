@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/allcss.css">
+    <link rel="stylesheet" href="css/perfilpolitico.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" style="width: 70px;"></a>
+        </div>
+
+        <ul>
+            <!-- <li> <a href="login.html" target="_blank" rel="noopener noreferrer" class="active">Login</a> </li> -->
+            <li> <a href="index.html">Políticos</a> </li>
+            <li> <a href="propositions.html">Proposições</a> </li>
+        </ul>
+
+        <a href="account.html">
+            <img id="account-picture" src="img/img_avatar.png" referrerpolicy="no-referrer" style="width: 50px; height: 50px;">
+        </a>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <img id="foto-politico" src="img/img_avatar.png" alt="">
+            <ul>
+                <li id="nome-politico">
+                    <p>-</p>
+                </li>
+                <li id="partido-politico">
+                    <p>-</p>
+                </li>
+                <li id="email-politico">
+                    <p>-</p>
+                </li>
+                <li id="nascimento-politico">
+                    <p>-</p>
+                </li>
+            </ul>
+
+            <button class="btn-politico" onclick="sendFollow()">Seguir</button>
+        </div>
+
+        <div class="About">
+            <h1>Proposições</h1>
+            <div id="container-card" class="container-card">
+            </div>
+            <button onclick="loadMoreProjects()">Mostrar mais</button>
+        </div>
+    </div>
+
+    <script src="js/politician-info.js"></script>
+</body>
+
+</html>

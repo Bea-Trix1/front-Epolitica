@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/allcss.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo(a)!</h2>
+                <p class="description description-primary">Já possui uma conta?</p>
+                <p class="description description-primary">Entre com seus dados pessoais</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Cadastre-se com o gmail</h2>
+                <div class="social-media">
+                    <div id="g_id_onload" data-client_id="130777659649-n28ivt3p5lo3bbj5s1p4dli8e2s6kkrc.apps.googleusercontent.com" data-callback="handleGoogleCredentialResponse"></div>
+                    <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                    </div>
+                </div>
+
+                <p class="description description-second">ou insira seus dados pessoais</p>
+                <div class="form">
+                    <label class="label-input" for="">
+                        <i class="fi fi-rr-user icon-modify"></i>
+                        <input type="text" id="register-name" placeholder="Nome Completo" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fi fi-rr-envelope icon-modify"></i>
+                        <input type="email" id="register-email" placeholder="Email" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fi fi-rr-lock icon-modify"></i>
+                        <input type="password" id="register-password" placeholder="Senha" required>
+                    </label>
+
+
+                    <button class="btn btn-second" onclick="sendRegister()">Cadastrar</button>
+                </div>
+            </div>
+            <!-- second column -->
+        </div>
+        <!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá!</h2>
+                <p class="description description-primary">Não possui uma conta?</p>
+                <p class="description description-primary">Junte-se a nós</p>
+                <button id="signup" class="btn btn-primary">Cadastre-se</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Entre com sua conta</h2>
+                <div class="social-media">
+                    <div id="g_id_onload" data-client_id="130777659649-n28ivt3p5lo3bbj5s1p4dli8e2s6kkrc.apps.googleusercontent.com" data-callback="handleGoogleCredentialResponse"></div>
+                    <div class=" g_id_signin " data-type="standard " data-size="large " data-theme="outline " data-text="sign_in_with " data-shape="rectangular " data-logo_alignment="left ">
+                    </div>
+                </div>
+
+                <p class="description description-second ">ou insira seus dados pessoais</p>
+                <div class="form ">
+
+                    <label class="label-input " for=" ">
+                        <i class="fi fi-rr-envelope icon-modify "></i>
+                        <input type="email " id="login-email " placeholder="Email " required>
+                    </label>
+
+                    <label class="label-input " for=" ">
+                        <i class="fi fi-rr-lock icon-modify "></i>
+                        <input type="password " id="login-password " placeholder="Senha " required>
+                    </label>
+
+                    <!-- <a class="password " href="# ">Esqueceu sua senha?</a> -->
+                    <button class="btn btn-second " onclick="sendLogin() ">Entrar</button>
+                </div>
+            </div>
+            <!-- second column -->
+        </div>
+        <!-- second-content -->
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client " async defer></script>
+    <script src="js/login.js "></script>
+</body>
+
+</html>

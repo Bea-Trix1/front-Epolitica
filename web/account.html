@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/allcss.css">
+    <link rel="stylesheet" href="css/perfilusuario.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" style="width: 70px;"></a>
+        </div>
+
+        <ul>
+            <!-- <li> <a href="login.html" target="_blank" rel="noopener noreferrer" class="active">Login</a> </li> -->
+            <li> <a href="index.html">Políticos</a> </li>
+            <li> <a href="propositions.html">Proposições</a> </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <img id="account-picture" src="img/img_avatar.png" alt="" referrerpolicy="no-referrer">
+            <ul>
+                <li>
+                    <p id="account-name">-</p>
+                </li>
+            </ul>
+        </div>
+        <div class="About">
+            <ul>
+                <h1>dados pessoais</h1>
+            </ul>
+            <ul>
+                <h3>Nome Completo</h3>
+                <li>
+                    <label class="label-input">
+                <i class="fi fi-rr-user icon-modify"></i>
+                <input id="update-name" type="text" placeholder="Nome Completo">
+                </label>
+                </li>
+            </ul>
+            <ul>
+                <h3>Perfil</h3>
+                <li>
+                    <label class="label-input">
+                <i class="fi fi-rr-user icon-modify"></i>
+                <input id="update-picture" type="url" placeholder="Foto de perfil">
+                </label>
+                </li>
+            </ul>
+            <ul>
+                <h3>Nova senha</h3>
+                <li>
+                    <label class="label-input">
+            <i class="fi fi-rr-user icon-modify"></i>
+            <input id="update-new-password" type="password" placeholder="Nova senha">
+            </label>
+                </li>
+            </ul>
+            <ul>
+                <h3>Senha Atual</h3>
+                <li>
+                    <label class="label-input">
+              <i class="fi fi-rr-user icon-modify"></i>
+              <input id="update-password" type="password" placeholder="Confirme sua senha">
+              </label>
+                </li>
+            </ul>
+            <ul>
+                <li><button class="btn btn-profile" onclick="sendUpdateUser()">Alterar</button></li>
+            </ul>
+            <ul>
+                <h1>Seguindo</h1>
+                <ul id="follows" class="container-card">
+                </ul>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/account.js"></script>
+</body>
+
+</html>

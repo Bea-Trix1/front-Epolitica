@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" href="css/allcss.css">
+    <link rel="stylesheet" href="css/comments.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" style="width: 70px;"></a>
+        </div>
+
+        <ul>
+            <!-- <li> <a href="login.html" target="_blank" rel="noopener noreferrer" class="active">Login</a> </li> -->
+            <li> <a href="index.html">Políticos</a> </li>
+            <li> <a href="propositions.html">Proposições</a> </li>
+        </ul>
+
+        <a href="account.html">
+            <img id="account-picture" src="img/img_avatar.png" referrerpolicy="no-referrer" style="width: 50px; height: 50px;">
+        </a>
+    </nav>
+    <!-- Fim Nav -->
+    <div class="container">
+        <div style="text-align: center;">
+            <div id="comments-area" class="box">
+                <div class="card_inner">
+                    <img src="img/infocard.png">
+                    <div id="project-type" class="role_name">-</div>
+                    <div id="project-ementa" class="film">-</div>
+                </div>
+                <h3>Comentários mais recentes</h3>
+            </div>
+            <button onclick="loadMoreComments()">Mostrar mais</button>
+        </div>
+
+        <div class="About">
+            <div class="container-card">
+                <div class="wrapper">
+                    <section class="post">
+                        <header>Comente</header>
+                        <div id="comment-section">
+                            <div class="content">
+                                <img src="img/logo.png" alt="logo">
+                                <div class="details">
+                                    <p>E-Politica</p>
+                                </div>
+                            </div>
+                            <textarea id="comment-content" maxlength="200" minlength="2" wrap="soft" placeholder="Insira aqui seu comentario" spellcheck="true" required></textarea>
+                            <button onclick="sendComment()">Comentar</button>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/proposition-comments.js"></script>
+</body>
+
+</html>

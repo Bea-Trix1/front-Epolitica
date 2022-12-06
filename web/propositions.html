@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/leis.css">
+    <link rel="stylesheet" href="css/allcss.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>Leis</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" style="width: 70px;"></a>
+            </div>
+
+            <ul>
+                <!-- <li> <a href="login.html" target="_blank" rel="noopener noreferrer" class="active">Login</a> </li> -->
+                <li> <a href="index.html">Políticos</a> </li>
+                <li> <a href="propositions.html">Proposições</a> </li>
+            </ul>
+
+            <a href="account.html">
+                <img id="account-picture" src="img/img_avatar.png" referrerpolicy="no-referrer" style="width: 50px; height: 50px;">
+            </a>
+        </nav>
+
+        <main>
+            <!-- <div class="list">
+                <div class="form-element">
+                    <input type="checkbox" name="platform" value="camara" id="camara">
+                    <label for="camara">
+                <div class="icon">
+                    <i class="fi fi-rr-list-check"></i>
+                </div>
+                <div class="title">
+                  Câmara
+                </div>
+              </label>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" name="platform" value="senado" id="senado">
+                    <label for="senado">
+                    <div class="icon">
+                        <i class="fi fi-rr-list-check"></i>
+                    </div>
+                <div class="title">
+                      Senado
+                </div>
+                </label>
+                </div>
+            </div> -->
+
+
+            <div id="cards_wrap" class="cards_wrap"></div>
+            <button onclick="loadMoreProjects()">Mostrar mais</button>
+
+        </main>
+    </div>
+
+
+    <script src="js/propositions.js"></script>
+</body>
+
+</html>

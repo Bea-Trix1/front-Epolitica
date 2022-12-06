@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+}
+
+
+/*Aside*/
+
+aside {
+    grid-area: aside;
+    background-color: #acc48c;
+}
+
+.list-title {
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li a {
+    border: 1px solid #fff;
+    margin-top: -1px;
+    background-color: transparent;
+    padding: 12px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    transition: background-color 1s;
+}
+
+.list li a:hover:not(.header) {
+    background-color: #fff;
+    color: #acc48c;
+}
+
+
+/*Fim aside*/
+
+
+/*Main*/
+
+main {
+    grid-area: main;
+    text-align: center;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 15px;
+    border-color: rgb(240, 240, 240);
+    margin: 5px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+/*Fim main*/

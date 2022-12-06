@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" href="css/allcss.css">
+    <link rel="stylesheet" href="css/comments.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="logo">
+            <a href="Home.html"><img src="img/logo.png" style="width: 70px;"></a>
+        </div>
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <form class="form">
+            <label class="input-header">
+                <i class="fi fi-rr-search icon-header"></i>
+                <input class="input-header" type="text" placeholder="Pesquisar">
+            </label>
+            <!--label-input-->
+        </form>
+
+        <ul>
+            <li> <a href="Login.html" target="_blank" rel="noopener noreferrer" class="active">Login</a> </li>
+            <li> <a href="Home.html" target="_blank" rel="noopener noreferrer">Partidos</a> </li>
+            <li> <a href="leis.html">Projetos de Lei</a> </li>
+        </ul>
+    </nav>
+    <!-- Fim Nav -->
+    <div class="container">
+        <div id="comment-section" class="box">
+            <div class="card_inner">
+                <img src="img/infocard.png">
+                <div id="project-type" class="role_name">Senado</div>
+                <div id="project-ementa" class="film">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            </div>
+        </div>
+        <button onclick="loadMoreComments()">Mostrar mais</button>
+
+        <div class="About">
+            <div class="container-card">
+                <div class="wrapper">
+                    <section class="post">
+                        <header>Comente</header>
+                        <div action="#">
+                            <div class="content">
+                                <img src="img/logo.png" alt="logo">
+                                <div class="details">
+                                    <p>E-Politica</p>
+                                </div>
+                            </div>
+                            <textarea id="comment-content" placeholder="Insira aqui seu comentario" spellcheck="false" required></textarea>
+                            <button onclick="sendComment()">Comentar</button>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/comment.js"></script>
+</body>
+
+</html>
